@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>宠爱（pet's love）APP下载 - 宠爱官网</title>
+<meta name="Keywords" content="安陆,安陆市,安陆APP,安陆论坛,安陆招聘,安陆二手,安陆新闻,
+安陆一中,安陆天气">
+<meta name="description" content="大安陆社区-是致力于提供安陆市本地生活资讯、消费购物、人际交流一体化服务的大型互动平台。本地内最够味的娱乐互动社区掌上安陆论坛！在这里你可以和网友们一起探讨柴米油盐、吃喝玩乐、衣食住行、生老病死和情感问题等问题，同时还可以了解本地的新闻头条。">
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<link rel="stylesheet" href="css/download.css" type="text/css" />
+
+<script type="text/javascript" src="/js/download.js"></script>
+
+<script type=text/javascript>var isIE6=false;var basePath = "";</script>
+<!--[if lte IE 6]><script>isIE6=true;</script><![endif]-->
+<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/city.js"></script>
+<script type="text/javascript" src="js/topcity.js"></script>
+<script type="text/javascript" src="js/date.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<link rel="stylesheet" href="css/public.css" type="text/css" />
+<link rel="stylesheet" href="css/header.css" type="text/css" />
+<link rel="stylesheet" href="css/city.css" type="text/css" />
+
+<script type="text/javascript">
+$(function() {
+selectMenu(6);
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#bcastr_content").css({"background-image":"url(images/ban-bj.png)"});
+	$(".down_nav_now").css({"background-image":"url(images/bcastr_bg2.jpg)","background-position":"center top"});
+	/* $(".menu li").hover(function(){
+			$(this).addClass("hover");
+			$(this).children("ul li").attr('class','');
+		},function(){
+			$(this).removeClass("hover");  
+			$(this).children("ul li").attr('class','');
+		}
+	); 
+	$(".menu li.no_sub").hover(function(){
+			$(this).addClass("hover1");
+		},function(){
+			$(this).removeClass("hover1");  
+		}
+	);  */
+});
+function changeVerifyCode(id) {
+    $("#" + id).attr("src", "/jcaptcha.jpg?" +Math.random());
+}
+</script>
+
+<script type="text/javascript">
+var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+var browser = navigator.userAgent.toLowerCase(); 
+var isMobile = false; 
+for (var i=0; i<mobileAgent.length; i++){ if (browser.indexOf(mobileAgent[i])!=-1){ isMobile = true; 
+//alert(mobileAgent[i]); 
+location.href = 'http://wap.opencom.cn/user/download/anlu';
+break; } } 
+</script>
+
+</head>
+<body style="background-color:#fff;">
+
+
+
+
+
+
+<!-- 顶部 -->
+
+<div id="bath_path" style="display: none;"></div>
+<div id="bath_path2" style="display: none;"></div>
+<div id="bath_suffix" style="display: none;">HTUN.CN</div>
+<div id="mask"></div>
+<input id="idcode" name="idcode" value="0" type="hidden"/>
+<!-- 顶部 -->
+<div class="web_top">
+	<div class="headwraper">
+    	<div class="top_left">
+        	<span id="time"> 星期二（农历六月初二）</span>
+            <!-- <span>空气污染：轻度</span> -->
+        </div>
+        <div class="top_left"><dl class="top_rightl"><a href="/contact.html" id="customizingUrl">业务联系</a></dl></div>
+        <div class="top_right"><dl class="top_rightl">您好，欢迎来到宠爱（Pet's love）官网！</dl></div>
+        <div class="top_right" id="stone_box">
+        </div>
+    	<div class="clearfix"></div>
+    </div>
+</div>
+<!-- logo -->
+<div class="maintop">
+	<div class="headwraper" id="maintop">
+    	<div class="logbox"><a href="/"><img src="images/icon.png" width="125" border="0" alt="微生活,116114" /></a></div>
+    	<div class="weathernav">
+       	  <dl class="weathernavi" id="weather_img"></dl>
+            <dl class="weathernavt">
+            	<p class="weathernavtt" id="weather_num"></p>
+                <p class="weathernavtc" id="weather_text"></p>
+            </dl>
+            <div class="clearfix"></div>
+        </div>
+        <div class="search">
+            <div class="searchbox">
+                <input class="searchinput01" type="text" name="search" id="search" value="" onfocus="inputfocus()" onblur="inputblur()"  />
+                
+                	<form action="/search" method="get" id="formSearch" name="formSearch" onsubmit="return returnSearch();">
+	                <input class="searchinput02" type="submit" value="搜索" />
+	                </form>
+                
+            </div>
+            <div class="hotsearch" id="hotsearch">
+            </div>
+        </div>
+	</div>
+    <div class="clearfix"></div>
+</div><!-- 导航 -->
+<div class="nav_bg">
+	<div class="headwraper">
+		<ul class="menu" style="background-position: -99px 100%;">
+    	<li id="nav_id1" class="nav"><a href="/">首页</a></li>
+        <li id="nav_id2" class="nav"><a href="/entcoupon">发现</a></li>
+      
+        <li id="nav_id4" class="nav"><a href="/" target="_blank">附近</a></li>
+        <li id="nav_id5" class="li_3"><a class="noclick" href="#">我的</a></li>
+		</ul>
+        <div id="nav_id6" class="nav"><a href="/app.html" target="_blank">手机客户端<dl class="new_nav"><img src="images/new.png" width="31" height="25" border="0"></dl></a></div>
+        <div class="nav_stone">
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<!-- 导航结束 -->
+<div class="ewm"><img src="images/ewm.png">手机扫描二维码下载</div>
+<div class="clearfix"></div>
+<!-- 轮换图片 -->
+<!-- <div class="bcastr_bg_big">-->
+<div class="bcastr_bg" id="bcastr_content"> 
+<div class="wraper banner">
+	 <div class="box">
+	  <div class="b_logo"><img src="images/logo.png" width="185" height="185"></div>
+   		<div id="apDiv1" class="b_share"><!-- JiaThis Button BEGIN -->
+		<a href="http://www.jiathis.com/share" style="display:block;" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis">
+            <img src="images/shear.png" width="104" height="38" /></a>
+		<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+		<!-- JiaThis Button END -->
+       </div>
+        
+
+       
+        
+        
+        
+        
+	   <div class="b_left"><img src="images/phone.png" width="286" height="590"></div>
+	
+	<!-- <div class="bcastr_word">
+    <img src="/images/bcastr_word.png"  />
+    </div> -->
+	<div class="down_top b_right">
+           <ul>
+        		<li><img src="images/dow_10.png" width="349" height="41"></li>
+        		<li><img src="images/dow_12.png" width="567" height="51"></li>
+   	 	 	</ul>
+        	<ul class="menu1" style="margin-top:80px;">
+         	 <li>
+             <!--<a href="http://i.buger.net/ibuger_service/ios/anlu.ipa" class="ios"></a>-->
+           	  <a id="pios_u" href="" onclick="javascript:if(confirm('暂时不支持下载')){window.location='下载地址';};return;" class="ios"><img src="images/iphone.png" width="169" height="45" /></a><br/><span class="rjbb">软件版本<span id="pios_v" class="rjbb">13.2</span></span>
+              
+          </li>
+          <li style="margin-left:20px;">
+            	<a id="pandroid_u" href=""><img src="images/android.png" width="169" height="45" /></a><span class="rjbb"><br/>软件版本<span class="rjbb" id="pandroid_v">13.2</span></span>
+              
+          </li >
+         	 <li style="margin-left:20px;">
+            	<a id="pwp_u" href="/app.html" onclick="javascript:if(confirm('WP版正在加紧生产中，小伙伴们课尝试其它版本？')){window.location='/app.html" class="wp"><img src="images/win.png" width="169" height="45" /></a><span class="rjbb"><br/>软件版本<span  class="rjbb" id="pwp_v">00.0</span></span>
+               
+          </li>
+      </ul>
+      <ul class="b_tel">
+        <li style="padding-left:15px;">应用市场分流下载：</li><br/>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li>　<a href="http://android.myapp.com/myapp/detail.htm?apkName=ibuger.anlu" target="_blank"><img src="images/yingyongbao.png" width="50" height="50" /></a>　
+          
+          <a href="http://shouji.baidu.com/software/item?docid=7771612&amp;f=sug@software" target="_blank"><img src="images/baidu.png" width="50" height="50"/></a> 　         <a href="http://apk.hiapk.com/appinfo/ibuger.anlu" target="_blank"><img src="images/hiapk.png" width="50" height="50"/></a> 　</li>
+        <li class="code"></li>
+         <li><input type="button" class="b_sure" id="sbb" style="width:104px;height:36px;margin-left:10px;" onclick="http://www.htun.cn" value="更多连接"></input></li> 
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+   
+</div>
+</div> 
+<div class="main">
+  <div class="content">
+    <div class="m_tit left">
+      <ul>
+        <li class="tit orange"><em>实时</em>提供萌宠信息，<em>精选</em>宠物图片</li>
+        <li class="title">提升优生质量<br/>
+            控制劣汰数量<br/>
+            力争使每个宠物都找到伴侣<br/>
+            使每个宠物都不再孤单！</li>
+      </ul>
+    </div>
+    <div class="m_img right"><img src="images/phone_1.jpg" width="280" height="416"></img></div>
+    <div class="clear"></div>
+  </div>
+  <div class="content">
+    <div class="m_img left"><img src="images/phone_2.jpg" width="280" height="416"></img></div>
+    <div class="m_tit right">
+      <ul>
+        <li class="tit  red">周边推荐<em>好助手</em></li>
+        <li class="title">精选附近宠物图片<br/>
+            选取附近合适宠物主人信息<br/>
+            最简单的操作流程，最便捷的交流方式<br/>
+            让您足不出户，解决宠物交配烦忧。</li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="content">
+    <div class="m_tit left">
+      <ul>
+        <li class="tit green">
+        <em>一键式</em>编辑宠物</li>
+        <li class="title">操作简单的宠物编辑<br/>
+            一键式宠物添加或删除<br/>
+            为您的萌宠编辑简介和介绍<br/>
+            使萌宠提高关注度，增加宠物魅力迅速‘脱单’</li>
+      </ul>
+    </div>
+    <div class="m_img right"><img src="images/phone_3.jpg" width="280" height="416"></img></div>
+    <div class="clear"></div>
+  </div>
+  <div class="intro">
+  <li class="tit green">
+    <h2 style="font-size: 30px; font-weight: bold; color: #F60;><span class="daanlu">安陆</span><span class="daanlu1">宠爱</span>（Pet's love）<span class="daanlu">APP</span></h2></li>
+    <p style="font-size: 30px; font-weight: normal;">&nbsp;</p>
+    <p>Pet's love致力为爱宠物人士提供最专业的宠物征婚交友服务</p>
+    <p>方便宠物实现网上交友、良种优化、是爱宠人士轻松获取养宠常识的手机应用！</p>
+  </div>
+  
+</div>
+<div class="footer">
+  <ul>
+    <li class="nav">
+        <a href="" >关于我们</a> |
+        <a href="" >联系方式</a> |
+        <a href="" >合作伙伴</a> |
+    <a href="" >免责声明</a></li>
+    <li>
+      <p>2017 内蒙古大学</p></li>
+  </ul>
+</div>
+<!-- 统计 -->
+<div class="statistics_box" id="statistics">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F850d0b6f53ffc46d4bdfb4b6fbbd6766' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+<script src="js/publish-1.3.js"></script>
+				<script>
+				f = "yyyy年MM月dd日";
+				q = true;
+				accountid="RAIYI_SM";
+				md5str="";
+				publish("pandroid","mlifeAnd","raiyi");
+				publish("pios","mlifeiosas","");
+				publish("pwp","mlifewp","");
+				</script>
+</body>
+</html>
